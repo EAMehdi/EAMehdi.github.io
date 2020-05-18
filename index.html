@@ -2,102 +2,82 @@
 <html>
 
 <head>
-	<title>Mehdi E.A. Website</title>
+	<title>Mehdi E.A.</title>
 	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	<link rel="stylesheet" href="assets/css/myStyle.css" />
-	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script> -->
-
-	<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	<link id='stylesheet' rel='stylesheet' href='assets/css/dark.css' />
+	<meta name='viewport' content='width=device-width, initial-scale=1.0' />
+	<meta name='theme-color' content='#ffffff' />
 </head>
 
 <body>
-	<nav class="navbar navbar-expand-lg static-top mynav">
-		<div class="container">
-			<a class="navbar-brand titlenav" href="#">M. EA</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-				aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarResponsive">
-				<ul class="navbar-nav ml-auto">
-			  <li class="nav-item active">
-				<a class="nav-link" href="#">Me
-				  <span class="sr-only">(current)</span>
-				</a>
-			  </li>
-			  <li class="nav-item">
-				<a class="nav-link" href="https://github.com/EAMehdi/">My projects</a>
-			  </li>
-			  <li class="nav-item">
-				<a class="nav-link" href="mailto: ayadi.mehdi@outlook.com">Contact</a>
-			  </li>
-			</ul>
-			</div>
-		</div>
-	</nav>
+		<h1>Mehdi EL AYADI</h1>
+		<h4>French CS Students at</h4>
+		<a
+      		href='https://dauphine.psl.eu/formations/masters/informatique/m1-methodes-informatiques-appliquees-a-la-gestion-des-entreprises'
+      		target='_blank'
+      	>
+			<img class="logoDau" src="images/dauphine_white.png" 
+				alt="Paris Dauphine University"
+				width='200em'
+    			height='auto'/>
+		</a>
+		<br>
+		<br>
+		<hr style='border-top: 2px dashed;margin-right:40%;'>
+		<h2>Primary focus:</h2>
+		<ul>
+			<li>Programming</li>
+			<li>AI & Machine Learning</li>
+			<li>Finance</li>
+		</ul>
+		<h2>Coding Skills:</h2>
+		<ul>
+			<li>Java / C# .NET</li>
+			<li>C/C++</li>
+			<li>Python</li>
+			<li>Bash</li>
+		</ul>
+		<details style="margin-right:30%;">
+			<summary><b>Projects Snippet</b></summary>
+			  
+	  <ul>
+		  <li>
+			  1st Year - <b>C# WPF</b> Final Project -
+			  <a href="images/marvelFlowVideo.mp4" target="_blank">
+			   MarvelFlow (en)
+			  </a>
+		  </li>
+		  <li>
+			  <b>Java</b> Console Elevator Simulator -
+			  <a href="https://github.com/EAMehdi/elevatorProject" target="_blank">
+			   Github project (fr-en)
+			  </a>
+		  </li>
+		  <li>
+			  3rd Year - <b>Communication</b> Final presentation -
+			  <a href="communication-MEA.pdf" target="_blank">
+			   Slides (fr)
+			  </a>
+		  </li>
+		  <li>
+			  3rd Year - <b>ERP Prototype</b> video -
+			  <a href="canardDodu.mp4" target="_blank">
+			   Code System(fr) 
+			  </a>
+		  </li>
+	  </ul>
+		  </details>
 
-	<div class="container">
-		<div class="col-lg-12 text-center">
-			<h1>Mehdi <br> EL AYADI</h1>
-			<script src="assets/js/anime.min.js"></script>
-			<p class="ml3">French IT Students</p>
-			<p class="ml4" id="suplog">at</p>
-			<div class="logo text-center">
-				<img class="logoDau" src="images/dauphine_logo.png" alt="Paris Dauphine University" />
-				<br />
-				<p class="sublog">"Paris Dauphine University"</p>
-				<img class="logoDau" id="randomImg" src="images/undraw_Graduation_ktn0.svg" alt="Random Image" />
-			</div>
-			<div class="mybtn">
-					<a href="https://github.com/EAMehdi/" class="btn btn-outline-light btn-lg">GitHub</a>
-				</form>
-			</div>
-			<script>
-				// Wrap every letter in a span
-				var textWrapper = document.querySelector('.ml3');
-				textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+		<hr style='border-top: 2px dashed;margin-right:40%;'>
+		<br>
+		<a href="https://github.com/EAMehdi/" target="_blank">
+		<button type='button' >Github
+		</button>
+		</a>
+	<address>
+		<a href='mailto:mehdi.el-ayadi@dauphine.Eu'>Send me an email</a><br/>
+	</address>
 
-				anime.timeline({ loop: false })
-					.add({
-						targets: '.ml3 .letter',
-						opacity: [0, 1],
-						easing: "easeInOutQuad",
-						duration: 800,
-						delay: (el, i) => 70 * (i + 1)
-					});
-			</script>
-			<script>
-				var textWrapper = document.querySelector('.ml4');
-				textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
-				anime.timeline({ loop: false })
-					.add({
-						targets: '.ml4 .letter',
-						opacity: [0, 1],
-						easing: "easeInOutQuad",
-						duration: 1000,
-						delay: 900
-					}).add({
-						targets: '.logo',
-						opacity: [0, 1],
-						easing: "easeInOutQuad",
-						duration: 1000,
-						delay: (el, i) => 50 * (i + 1)
-					}).add({
-						targets: '.mybtn',
-						opacity: [0, 1],
-						easing: "easeInOutQuad",
-						duration: 1250,
-						delay: (el, i) => 70 * (i + 1)
-					});
-			// </script>
-		</div>
-	</div>
-
+	
 </body>
-
 </html>
