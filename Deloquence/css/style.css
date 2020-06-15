@@ -1,0 +1,62 @@
+/*!
+ * Start Bootstrap - Full Width Pics (https://startbootstrap.com/template-overviews/full-width-pics)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-full-width-pics/blob/master/LICENSE)
+ */
+body {
+  padding-top: 56px;
+}
+
+
+body, nav{
+  background: #111315;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #161718, #111315);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #161718, #111315); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+footer{
+  background: #111315;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #202224, #111315);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #202224, #111315); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+
+
+.title,p,h1,h2{
+  color: #dfe2d9;
+  font-family:'Inria Sans';
+  font-weight: bolder;
+ }
+
+
+
+
+.bg-image-full {
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.fa {
+  background: #202224;
+  color: #dfe2d9;
+  padding: 20px;
+  font-size: 30px;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover{
+  color: #dfe2d9d0;
+  text-decoration: none;
+}
+
+
+.objectif{
+  margin-top: 10%;
+}

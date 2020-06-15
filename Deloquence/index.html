@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="Association Dauphine Eloquence de l'Université Paris Dauphine - PSL" content="">
+  <meta name="Mehdi EL AYADI" content="">
+
+  <title>Dauphine Eloquence</title>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <!-- Custom styles for this template -->
+  <link href="css/InriaSans/Web/fonts.css" rel="stylesheet">
+  <link href="css/InriaSerif/Web/fonts.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="css/style.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <p class="m-0">DAUPHINE ELOQUENCE</p>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">A propos
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#objectif">Notre Objectif
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#joinUs">Liens Utiles</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header - set the background image for the header in the line below -->
+  <header class="py-5 bg-image-full" style="background-image: url('src/dauWide.jpg');">
+    <img class="img-fluid d-block mx-auto rounded-circle shadow-lg logoDE" src="src/logoDeFilled.png"
+      alt="Dauphine Eloquence">
+  </header>
+
+  <!-- Content section -->
+  <section class="py-5 shadow-lg">
+    <div class="container">
+      <h1 class="title text-center ml3">Dauphine Eloquence
+      </h1>
+      <p class="text-center lead text1">Université Paris Dauphine - PSL</p>
+
+      <p class="text-center text2">Association étudiante dauphinoise pour la promotion et la formation à l'éloquence.
+      </p>
+    </div>
+  </section>
+
+  <script src="js/anime.min.js"></script>
+  <script>
+    var textWrapper = document.querySelector('.ml3');
+    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+    anime.timeline({ loop: false })
+      .add({
+        targets: '.logoDE',
+        opacity: [0, 1],
+        rotateZ: [-10, 0],
+        easing: "easeOutExpo",
+        duration: 1300,
+        delay: 200
+      })
+      .add({
+        targets: '.ml3 .letter',
+        opacity: [0, 1],
+        easing: "easeInOutQuad",
+        duration: 800,
+        delay: (el, i) => 50 * (i + 1)
+      })
+      .add({
+        targets: '.text1',
+        opacity: [0, 1],
+        easing: "easeInOutQuad",
+        duration: 500,
+      })
+      .add({
+        targets: '.text2',
+        opacity: [0, 1],
+        easing: "easeInOutQuad",
+        duration: 500,
+      });
+  </script>
+
+  <!-- Image Section - set the background image for the header in the line below -->
+  <section class="py-5 bg-image-full shadow-lg"
+    style="background-image: url('https://images.unsplash.com/photo-1507679799987-c73779587ccf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80');">
+    <!-- Put anything you want here! There is just a spacer below for demo purposes! -->
+    <div style="height: 200px;"></div>
+  </section>
+
+  <!-- Content section -->
+  <section class="py-5" id="objectif">
+    <div class="container obj">
+      <h1 class="text-center">Notre objectif</h1>
+      <p class="lead text-center">Portée par l’idée qu’un bon manager est aussi un manager percutant, convaincant et cultivé, Dauphine Éloquence
+        s’est fixé pour objectif de promouvoir l’art oratoire au sein de Dauphine, et de populariser un exercice
+        formateur : celui du discours et des débats.</p>
+
+    </div>
+  </section>
+
+    <!-- Image Section - set the background image for the header in the line below -->
+    <section class="py-5 bg-image-full shadow-lg"
+    style="background-image: url('https://images.unsplash.com/photo-1503428593586-e225b39bddfe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');">
+    <!-- Put anything you want here! There is just a spacer below for demo purposes! -->
+    <div style="height: 200px;"></div>
+  </section>
+
+  <!-- Content section -->
+  <section class="py-5 text-center" id="joinUs">
+    <div class="container">
+      <h1 class="text-center">Rejoignez-nous</h1>
+    </div>
+    <a href="https://facebook.com/dauphine.eloquence" target="_blank" class="fa fa-facebook"></a>
+    <a href="https://www.instagram.com/dauphineloquence/" target="_blank" class="fa fa-instagram"></a>
+  </section>
+
+
+
+  <!-- https://images.unsplash.com/photo-1503428593586-e225b39bddfe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80 -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; <br>Dauphine Eloquence Université Paris Dauphine - PSL <br>
+        2020</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="js/anime.min.js"></script>
+  <script src="js/goto.js"></script>
+
+
+</body>
+
+</html>
