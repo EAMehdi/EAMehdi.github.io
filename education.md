@@ -1,3 +1,4 @@
+# Max et Lili découvre chatGPT
 ## Scène 1 :
 
 *(Lili court à la maison après l'école et trouve Max dans leur chambre partagée)*
