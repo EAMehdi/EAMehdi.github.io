@@ -5,11 +5,11 @@
 
 Lili : "Max, tu as besoin de voir ça! Marlène m'a montré quelque chose de génial à l'école aujourd'hui."
 
-Max : "Oh oui? Qu'est-ce que c'est?"
+Max : "Ah oui? Qu'est-ce que c'est?"
 
 Lili : "Ça s'appelle ChatGPT. On peut lui poser toutes sortes de questions, et il répond!"
 
-*(Max et Lili sortent l'ordinateur et commencent à taper sur l'IA)*
+*(Max et Lili sortent l'ordinateur et commencent à taper sur le site de l'IA)*
 
 Max : "Alors, que dirais-tu si je dis que tu es une grosse patate pourrie?"
 
@@ -45,7 +45,7 @@ Lili : "C'est incroyable comme il sait tout!"
 
 Mère : "Ils passent beaucoup de temps sur cet ordinateur. Tu penses qu'ils font quoi?"
 
-Père : "Je ne sais pas, mais nous devrions vérifier. Et, tu sais, nous aussi, nous passons beaucoup de temps à faire regarder nos téléphones indéfiniment. Peut-être que nous sommes aussi victimes de ces nouvelles Intelligences Artificelle..."
+Père : "Je ne sais pas, mais nous devrions vérifier. Et tu sais, nous aussi, nous passons beaucoup de temps à regarder nos téléphones indéfiniment avec toutes ces nouvelles applications. Peut-être que nous sommes aussi victimes de ces nouvelles Intelligences Artificielles."
 
 ## Scène 5 :
 
@@ -93,7 +93,7 @@ Max : "J'ai hâte d'en apprendre plus sur l'IA. Mais d'abord, une partie de bask
 
 Lili : "Oui, ça me semble une excellente idée, Max!"
 
-*(L'histoire se termine avec Max et Lili courant dehors pour jouer au football, laissant l'ordinateur derrière eux.)*
+*(L'histoire se termine avec Max et Lili courant dehors pour jouer au basket, laissant l'ordinateur derrière eux.)*
 
 ## Quelques questions aux enfants : 
 
