@@ -80,3 +80,27 @@ Max : "J'ai hâte d'en apprendre plus sur l'IA. Mais d'abord, une partie de foot
 Lili : "Oui, ça me semble une excellente idée, Max!"
 
 *(L'histoire se termine avec Max et Lili courant dehors pour jouer au football, laissant l'ordinateur derrière eux.)*
+
+Bien sûr, les questions ouvertes peuvent stimuler la réflexion critique et la discussion sur le sujet. Voici quelques questions liées à cette histoire :
+
+1. Comment Max et Lili utilisent-ils ChatGPT dans l'histoire ? Penses-tu qu'ils l'utilisent judicieusement ?
+
+2. Quelles ont été les conséquences de la dépendance excessive de Max et Lili envers ChatGPT ?
+
+3. As-tu déjà utilisé un outil similaire à ChatGPT ? Si oui, comment l'as-tu utilisé ?
+
+4. Comment les parents de Max et Lili ont-ils réagi quand ils ont découvert ChatGPT ? Penses-tu qu'ils ont bien géré la situation ?
+
+5. Comment penses-tu que Max et Lili se sont sentis quand on leur a dit qu'ils ne pouvaient pas utiliser ChatGPT autant ?
+
+6. Quels changements l'enseignante envisage-t-elle de faire à l'école ? Es-tu d'accord avec ses idées ?
+
+7. Comment les actions de Max et Lili changent-elles à la fin de l'histoire ? Qu'est-ce que tu penses qu'ils ont appris ?
+
+8. Peux-tu penser à une situation où l'IA pourrait être utile ? Qu'en est-il d'une situation où elle pourrait causer des problèmes ?
+
+9. Comment te sentirais-tu si tu étais à la place de Max et Lili ? Qu'est-ce que tu ferais différemment ?
+
+10. Quelles sont quelques façons d'utiliser la technologie comme l'IA de manière responsable ?
+
+Ces questions peuvent aider les enfants à comprendre l'importance d'une utilisation responsable de l'IA, la valeur de la pensée indépendante, et les implications potentielles d'une dépendance excessive à la technologie.
