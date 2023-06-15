@@ -19,11 +19,11 @@ Max : "Alors, que dirais-tu si je dis que tu es une grosse patate pourrie?"
 
 *(Un soir, Lili a du mal avec son devoir)*
 
-Lili : "Je ne sais pas quoi écrire pour cet devoir... Attends, je pourrais demander à ChatGPT!"
+Lili : "Je ne sais pas quoi écrire pour ce devoir... Attends, je pourrais demander à ChatGPT!"
 
 *(Le lendemain, Lili rentre de l'école avec un grand sourire sur son visage)*
 
-Lili : "Max, tu ne vas pas le croire! J'ai eu 20/20 pour mon devoir!"
+Lili : "Max, tu ne vas pas le croire! J'ai eu 20/20 à mon devoir!"
 
 Max : "Vraiment? Ça doit être ce ChatGPT. Hmm, je me demande si je peux l'utiliser pour convaincre Papa et Maman de m'acheter la nouvelle console de jeux..."
 
@@ -45,23 +45,31 @@ Lili : "C'est incroyable comme il sait tout!"
 
 Mère : "Ils passent beaucoup de temps sur cet ordinateur. Tu penses qu'ils font quoi?"
 
-Père : "Je ne sais pas, mais nous devrions vérifier. Et, tu sais, nous aussi, nous passons beaucoup de temps à faire défiler nos téléphones. Peut-être que nous sommes aussi victimes de ces AIs..."
+Père : "Je ne sais pas, mais nous devrions vérifier. Et, tu sais, nous aussi, nous passons beaucoup de temps à faire regarder nos téléphones indéfiniment. Peut-être que nous sommes aussi victimes de ces nouvelles Intelligences Artificelle..."
 
 ## Scène 5 :
 
-*(À l'école, l'enseignant annonce un examen en classe)*
+*(À l'école, l'Enseignante annonce un examen en classe)*
 
-Enseignant : "J'ai remarqué que vous vous améliorez tous beaucoup dans vos devoirs. Alors, je pense que c'est le bon moment pour un petit contrôle en classe."
+Enseignante : "J'ai remarqué que vous vous améliorez tous beaucoup dans vos devoirs. Alors, je pense que c'est le bon moment pour un petit contrôle en classe."
 
-*(Après l'examen, l'enseignant est choqué par les mauvais résultats)*
+Les élèves : "Oh non pas un controle surprise !"
 
-Enseignant : "Comment est-ce possible? Leur travail à la maison est toujours si bon..."
+*(Après l'examen, l'Enseignante est choqué par les mauvais résultats)*
+
+Enseignante : "Comment est-ce possible? Leur travail à la maison est toujours si bon..."
 
 ## Scène 6 :
 
-*(L'enseignant réfléchit à la situation)*
+*(L'Enseignante réfléchit à la situation)*
 
-Enseignant : "Peut-être devrions-nous changer notre approche d'enseignement. Des projets pratiques pourraient être bénéfiques. Et, il serait peut-être temps d'enseigner la façon de naviguer dans le monde numérique de manière sécurisée et responsable."
+Enseignante : "Peut-être devrions-nous changer notre approche d'enseignement. Des projets pratiques pourraient être bénéfiques. Et, il serait peut-être temps d'enseigner la manière de naviguer dans le monde numérique de manière sécurisée et responsable."
+
+Lili : "Oui Madame, peut-être qu'on ne devrait plus nous évaluer avec des notes, mais se concentrer sur nos capacités à apprendre et sur la validation des acquis !"
+
+Karim : "Super idée ! En plus, je ne me ferai plus gronder à chaque fois que je ramène un bulletin à la maison !"
+
+Enseignante : "Ce sont de superbes propositions ça les enfants !"
 
 ## Scène 7 :
 
@@ -69,19 +77,25 @@ Enseignant : "Peut-être devrions-nous changer notre approche d'enseignement. De
 
 Mère : "Max, Lili, nous avons remarqué que vous passez beaucoup de temps avec ce ChatGPT. Il est important de comprendre que ce n'est qu'un outil et il ne faut pas croire tout ce qu'il dit."
 
+Max : "Mais non maman, il est super intelligent, il a même 20/20 à l'école !"
+
+Mère : "Tu sais Max, ce n'est qu'une machine, il ne comprend pas vraiment ce qu'il dit. Il faut toujours revérifier."
+
+Lili : "Oui, mais c'est tellement bien quand même. Moi, j'aime trop lui parler, c'est comme une meilleure amie."
+
 Père : "Nous allons mettre en place quelques règles et passer plus de temps hors ligne en famille. Nous allons aussi apprendre ensemble sur les avantages et les inconvénients de l'IA."
 
 ## Scène 8 :
 
-*(Max et Lili, leurs parents et l'école se lancent dans un nouveau voyage)*
+*(Max et Lili, leurs parents et l'école se lancent dans un nouvelle aventure pour apprendre à vivre dans un monde avec de l'IA)*
 
-Max : "J'ai hâte d'en apprendre plus sur l'IA. Mais d'abord, une partie de foot, ça te dit, Lili?"
+Max : "J'ai hâte d'en apprendre plus sur l'IA. Mais d'abord, une partie de basket, ça te dit, Lili?"
 
 Lili : "Oui, ça me semble une excellente idée, Max!"
 
 *(L'histoire se termine avec Max et Lili courant dehors pour jouer au football, laissant l'ordinateur derrière eux.)*
 
-Bien sûr, les questions ouvertes peuvent stimuler la réflexion critique et la discussion sur le sujet. Voici quelques questions liées à cette histoire :
+## Quelques questions aux enfants : 
 
 1. Comment Max et Lili utilisent-ils ChatGPT dans l'histoire ? Penses-tu qu'ils l'utilisent judicieusement ?
 
@@ -93,7 +107,7 @@ Bien sûr, les questions ouvertes peuvent stimuler la réflexion critique et la 
 
 5. Comment penses-tu que Max et Lili se sont sentis quand on leur a dit qu'ils ne pouvaient pas utiliser ChatGPT autant ?
 
-6. Quels changements l'enseignante envisage-t-elle de faire à l'école ? Es-tu d'accord avec ses idées ?
+6. Quels changements l'Enseignantee envisage-t-elle de faire à l'école ? Es-tu d'accord avec ses idées ?
 
 7. Comment les actions de Max et Lili changent-elles à la fin de l'histoire ? Qu'est-ce que tu penses qu'ils ont appris ?
 
