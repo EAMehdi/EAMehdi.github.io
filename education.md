@@ -95,7 +95,7 @@ Lili : "Oui, ça me semble une excellente idée, Max!"
 
 *(L'histoire se termine avec Max et Lili courant dehors pour jouer au basket, laissant l'ordinateur derrière eux.)*
 
-## Quelques questions aux enfants : 
+## Quelques questions aux enfants: 
 
 1. Comment Max et Lili utilisent-ils ChatGPT dans l'histoire ? Penses-tu qu'ils l'utilisent judicieusement ?
 
