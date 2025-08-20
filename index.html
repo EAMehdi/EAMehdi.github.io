@@ -22,24 +22,77 @@
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
       }
-      .blob { mix-blend-mode: screen; filter: saturate(160%) blur(28px); }
-      @keyframes floatA { 0%{transform:translate(-80px,-60px) scale(1) rotate(0deg)} 33%{transform:translate(10px,-20px) scale(1.08) rotate(10deg)} 66%{transform:translate(-20px,-10px) scale(1.02) rotate(-5deg)} 100%{transform:translate(0,0) scale(1) rotate(0deg)} }
-      @keyframes floatB { 0%{transform:translate(60px,40px) scale(1) rotate(0deg)} 33%{transform:translate(0,0) scale(1.05) rotate(8deg)} 66%{transform:translate(20px,10px) scale(1.02) rotate(-4deg)} 100%{transform:translate(0,0) scale(1) rotate(0deg)} }
-      @keyframes floatC { 0%{transform:translate(0,0) scale(1) rotate(0deg)} 33%{transform:translate(-10px,10px) scale(1.06) rotate(6deg)} 66%{transform:translate(15px,-10px) scale(.98) rotate(-3deg)} 100%{transform:translate(0,0) scale(1) rotate(0deg)} }
+
+      /* Blobs */
+      .blob { 
+        mix-blend-mode: screen; 
+        filter: saturate(160%) blur(28px); 
+        will-change: transform;
+        transform-origin: 50% 50%;
+      }
+      /* Avoid jump: set initial transforms to match 0% keyframe,
+         use fill-mode:both and alternate so it ping-pongs seamlessly */
+      .blob-a {
+        transform: translate(-80px,-60px) scale(1) rotate(0deg);
+        animation: floatA 16s ease-in-out infinite alternate both;
+      }
+      .blob-b {
+        transform: translate(60px,40px) scale(1) rotate(0deg);
+        animation: floatB 18s ease-in-out infinite .2s alternate both;
+      }
+      .blob-c {
+        transform: translate(0,0) scale(1) rotate(0deg);
+        animation: floatC 20s ease-in-out infinite .6s alternate both;
+      }
+
+      @keyframes floatA {
+        0%   { transform: translate(-80px,-60px) scale(1) rotate(0deg); }
+        33%  { transform: translate(10px,-20px)  scale(1.08) rotate(10deg); }
+        66%  { transform: translate(-20px,-10px) scale(1.02) rotate(-5deg); }
+        100% { transform: translate(0,0)         scale(1)    rotate(0deg); }
+      }
+      @keyframes floatB {
+        0%   { transform: translate(60px,40px)  scale(1) rotate(0deg); }
+        33%  { transform: translate(0,0)        scale(1.05) rotate(8deg); }
+        66%  { transform: translate(20px,10px)  scale(1.02) rotate(-4deg); }
+        100% { transform: translate(0,0)        scale(1) rotate(0deg); }
+      }
+      @keyframes floatC {
+        0%   { transform: translate(0,0)        scale(1) rotate(0deg); }
+        33%  { transform: translate(-10px,10px) scale(1.06) rotate(6deg); }
+        66%  { transform: translate(15px,-10px) scale(.98) rotate(-3deg); }
+        100% { transform: translate(0,0)        scale(1) rotate(0deg); }
+      }
+
+      /* Equal-height skill cards only on mobile portrait (fallback if JS disabled) */
+      @media (max-width: 767px) and (orientation: portrait) {
+        .mobile-equal-rows { grid-template-rows: repeat(3, minmax(0, 1fr)); }
+        .skill-card { min-height: 260px; }
+      }
     </style>
   </head>
   <body class="text-slate-100 min-h-screen overflow-x-hidden relative">
-    <!-- BACKGROUND (kept inside an overflow-hidden layer so it never creates horizontal scroll) -->
+    <!-- BACKGROUND -->
     <div aria-hidden class="pointer-events-none absolute inset-0 overflow-hidden">
       <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(2,8,23,0.75),transparent_60%)]"></div>
-      <div class="blob absolute -top-24 -left-28 h-[34rem] w-[34rem] rounded-full" style="background: radial-gradient(closest-side, rgba(168,85,247,.65), transparent 60%), conic-gradient(from 90deg at 50% 50%, rgba(34,211,238,.5), rgba(99,102,241,.5), rgba(244,63,94,.45), rgba(34,211,238,.5)); animation: floatA 16s ease-in-out infinite;"></div>
-      <div class="blob absolute bottom-[-8rem] right-[-6rem] h-[30rem] w-[30rem] rounded-full" style="background: radial-gradient(closest-side, rgba(34,197,94,.55), transparent 60%), conic-gradient(from 0deg at 50% 50%, rgba(14,165,233,.5), rgba(34,197,94,.5), rgba(234,88,12,.45), rgba(14,165,233,.5)); animation: floatB 18s ease-in-out .2s infinite;"></div>
-      <div class="blob absolute top-1/3 left-1/2 -translate-x-1/2 h-[26rem] w-[26rem] rounded-full" style="background: radial-gradient(closest-side, rgba(99,102,241,.45), transparent 60%), conic-gradient(from 0deg at 50% 50%, rgba(20,184,166,.45), rgba(236,72,153,.45), rgba(99,102,241,.45)); animation: floatC 20s ease-in-out .6s infinite;"></div>
+
+      <div class="blob blob-a absolute -top-24 -left-28 h-[34rem] w-[34rem] rounded-full"
+           style="background: radial-gradient(closest-side, rgba(168,85,247,.65), transparent 60%), 
+                              conic-gradient(from 90deg at 50% 50%, rgba(34,211,238,.5), rgba(99,102,241,.5), rgba(244,63,94,.45), rgba(34,211,238,.5));"></div>
+
+      <div class="blob blob-b absolute bottom-[-8rem] right-[-6rem] h-[30rem] w-[30rem] rounded-full"
+           style="background: radial-gradient(closest-side, rgba(34,197,94,.55), transparent 60%), 
+                              conic-gradient(from 0deg at 50% 50%, rgba(14,165,233,.5), rgba(34,197,94,.5), rgba(234,88,12,.45), rgba(14,165,233,.5));"></div>
+
+      <div class="blob blob-c absolute top-1/3 left-1/2 -translate-x-1/2 h-[26rem] w-[26rem] rounded-full"
+           style="background: radial-gradient(closest-side, rgba(99,102,241,.45), transparent 60%), 
+                              conic-gradient(from 0deg at 50% 50%, rgba(20,184,166,.45), rgba(236,72,153,.45), rgba(99,102,241,.45));"></div>
+
       <div class="absolute inset-0 opacity-[0.06]" style="background-image: radial-gradient(circle at 30% 30%, rgba(255,255,255,.25) 1px, transparent 1px); background-size: 3px 3px"></div>
     </div>
 
     <main class="relative z-10 mx-auto max-w-6xl p-5 sm:p-6 md:p-10 lg:p-16">
-      <header class="glass rounded-3xl p-6 sm:p-8 md:p-10 max-w-md mx-auto md:max-w-none" aria-labelledby="name"" aria-labelledby="name">
+      <header class="glass rounded-3xl p-6 sm:p-8 md:p-10 max-w-md mx-auto md:max-w-none" aria-labelledby="name">
         <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-6">
           <!-- LEFT -->
           <div>
@@ -77,10 +130,11 @@
         </div>
       </header>
 
-      <section class="mt-8 grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
-        <div class="glass rounded-3xl p-6 max-w-md mx-auto md:max-w-none">
+      <!-- Equal-height on mobile portrait; JS equalizes when 1-col on desktop resize -->
+      <section class="skill-grid mt-8 grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8 mobile-equal-rows">
+        <div class="skill-card glass rounded-3xl p-6 max-w-md mx-auto md:max-w-none flex flex-col h-full">
           <h3 class="text-lg font-semibold mb-3">Engineering</h3>
-          <div class="flex flex-wrap gap-2">
+          <div class="flex flex-wrap gap-2 flex-1">
             <span class="chip rounded-full px-3 py-1 text-xs inline-flex items-center gap-2"><i class="bi bi-code-slash"></i> Python</span>
             <span class="chip rounded-full px-3 py-1 text-xs inline-flex items-center gap-2"><i class="bi bi-server"></i> Java / Spring</span>
             <span class="chip rounded-full px-3 py-1 text-xs inline-flex items-center gap-2"><i class="bi bi-braces"></i> Angular</span>
@@ -90,17 +144,21 @@
             <span class="chip rounded-full px-3 py-1 text-xs inline-flex items-center gap-2"><i class="bi bi-box"></i> Docker</span>
           </div>
         </div>
-        <div class="glass rounded-3xl p-6 max-w-md mx-auto md:max-w-none">
+
+        <div class="skill-card glass rounded-3xl p-6 max-w-md mx-auto md:max-w-none flex flex-col h-full">
           <h3 class="text-lg font-semibold mb-3">Data &amp; AI</h3>
-          <div class="flex flex-wrap gap-2">
+          <div class="flex flex-wrap gap-2 flex-1">
             <span class="chip rounded-full px-3 py-1 text-xs inline-flex items-center gap-2"><i class="bi bi-database"></i> Pandas / NumPy</span>
-            <span class="chip rounded-full px-3 py-1 text-xs inline-flex items-center gap-2"><i class="bi bi-cpu"></i> Spark</span>
             <span class="chip rounded-full px-3 py-1 text-xs inline-flex items-center gap-2"><i class="bi bi-cpu"></i> LangChain</span>
+            <span class="chip rounded-full px-3 py-1 text-xs inline-flex items-center gap-2"><i class="bi bi-gear"></i> Scikit-learn</span>
+            <span class="chip rounded-full px-3 py-1 text-xs inline-flex items-center gap-2"><i class="bi bi-cpu"></i> PyTorch</span>
+            <span class="chip rounded-full px-3 py-1 text-xs inline-flex items-center gap-2"><i class="bi bi-cloud"></i> FastAPI</span>
           </div>
         </div>
-        <div class="glass rounded-3xl p-6 max-w-md mx-auto md:max-w-none">
+
+        <div class="skill-card glass rounded-3xl p-6 max-w-md mx-auto md:max-w-none flex flex-col h-full">
           <h3 class="text-lg font-semibold mb-3">Finance</h3>
-          <div class="flex flex-wrap gap-2">
+          <div class="flex flex-wrap gap-2 flex-1">
             <span class="chip rounded-full px-3 py-1 text-xs inline-flex items-center gap-2"><i class="bi bi-graph-up"></i> Risk Metrics (VaR, TE)</span>
             <span class="chip rounded-full px-3 py-1 text-xs inline-flex items-center gap-2"><i class="bi bi-graph-up"></i> Pricing Models</span>
             <span class="chip rounded-full px-3 py-1 text-xs inline-flex items-center gap-2"><i class="bi bi-graph-up"></i> ETFs / Indexing</span>
@@ -112,10 +170,43 @@
     </main>
 
     <script>
+      // Current year and horizontal overflow guard
       document.getElementById('year').textContent = new Date().getFullYear();
       document.addEventListener('DOMContentLoaded', () => {
         document.body.style.overflowX = 'hidden';
       });
+
+      // Equalize heights when the grid collapses to a single column (e.g., resized desktop window)
+      (function () {
+        const grid = document.querySelector('.skill-grid');
+        const cards = Array.from(document.querySelectorAll('.skill-card'));
+        if (!grid || cards.length === 0) return;
+
+        function equalize() {
+          // reset any previous min-heights
+          cards.forEach(c => c.style.minHeight = '');
+
+          // Detect current grid columns; if it's a single column, equalize
+          const cols = getComputedStyle(grid).gridTemplateColumns.split(' ').filter(Boolean).length;
+          const isSingleColumn = cols === 1;
+
+          if (isSingleColumn) {
+            let maxH = 0;
+            cards.forEach(c => { maxH = Math.max(maxH, c.offsetHeight); });
+            cards.forEach(c => { c.style.minHeight = maxH + 'px'; });
+          }
+        }
+
+        // Debounce resize handler
+        let to;
+        function onResize() {
+          clearTimeout(to);
+          to = setTimeout(equalize, 100);
+        }
+
+        window.addEventListener('load', equalize);
+        window.addEventListener('resize', onResize);
+      })();
     </script>
   </body>
 </html>
